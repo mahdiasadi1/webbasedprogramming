@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var mark=prompt("لطفا نمره را وارد نمایید ");
+    if (mark >= 10)
+     console.log("تبریک شما قبول شدی.");
+    else
+      console.log("متاسفم شما رفوزه شدی"); 
+     var abcd ;
+     if ( (mark<5) && (mark >=0))
+       abcd="D"; 
+       else if( (mark>=5 ) && (mark<10))
+       abcd="C";
+       else if((mark>=10 ) && (mark <15))
+       abcd="B";
+       else if((mark>=15) &&(mark<=20))
+        abcd="A";
+        else
+        abcd="wrong number";
+        console.log(abcd);
+        switch(abcd){
+        case "A":
+         console.log("نمره ممتاز");
+         break;
+        case "B":
+        console.log("نمره خوب");
+        break;
+        case "C":
+        console.log("نمره ضعیف");
+        break;
+        case "D":
+        console.log("نمره بد");
+        break;
+        default:
+         console.log("نمره را اشتباه وارد کرده اید"); 
+        }
+        //  console.log()
+    </script>
+</body>
+</html>
