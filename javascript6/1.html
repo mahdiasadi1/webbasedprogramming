@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"> rafsanjan</p>
+    <ul>
+        <li>iran</li>
+        <li>iraq</li>
+        <li>spain</li>
+    </ul>
+    <h1 class="myclass"> apple </h1>
+    <p class="myclass">orange</p>
+   <script>
+   var x =document.getElementById("p1");
+   alert(x.innerHTML);
+   x.innerHTML="<h1>kerman</h1>";
+   document.getElementsByTagName('li')[2].innerHTML="iceland";
+   document.getElementsByClassName('myclass')[0].innerHTML="banana";
+   document.querySelectorAll('li')[1].innerHTML="عراق";
+   document.querySelectorAll('#p1')[0].innerHTML = "رفسنجان";
+   document.querySelectorAll('.myclass')[1].innerHTML ="پرتغال";
+   document.querySelector('li').innerHTML= "ایران";
+   document.getElementsByTagName('li')[1].style.color="red";
+   document.getElementsByClassName('myclass')[1].style.backgroundColor="green";
+
+   </script>
+</body>
+</html>
