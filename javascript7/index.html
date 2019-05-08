@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     .mystyle {
+         color:orangered;
+         background-color: aqua;
+     }
+    </style>
+</head>
+<body>
+    <p align="right">
+        سلام ایران
+    </p>
+    <ul>
+        <li id="iran" onmouseover="changecountry()"
+         onmouseout="unchangecountry()">iran</li>
+        <li>iraq</li>
+        <li>ireland</li>
+    </ul>
+    <script>
+     var align=document.getElementsByTagName('p')[0].getAttribute('align');
+     console.log("align = " + align);
+     document.querySelector('p').setAttribute('align','left');
+     document.querySelectorAll('p')[0].className = 'mystyle';
+     function changecountry()
+     {
+         document.getElementById('iran').innerHTML = "ایران";
+     }
+     function unchangecountry()
+     {
+         document.getElementById('iran').innerHTML = "iran";
+     }
+     function changecolor()
+     {
+         document.getElementsByTagName('li')[2].className = "mystyle";
+     }
+     document.getElementsByTagName('li')[2].addEventListener('click',changecolor);
+    </script>
+</body>
+</html>
