@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img id="mypic" src="pics/1.png" width="200">
+    <script>
+    document.getElementById("mypic").addEventListener("mouseover",changepic);
+    document.getElementById("mypic").addEventListener("mouseout",changepic1);
+    function changepic()
+    {
+        document.getElementById("mypic").setAttribute("src","pics/2.jpg");
+    }
+    function changepic1()
+    {
+        document.getElementById("mypic").setAttribute("src","pics/1.png");
+    }
+    </script>
+</body>
+</html>
